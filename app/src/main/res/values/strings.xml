@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aplicativo Mobile</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_options">Opções</string>
+    <string name="title_activity_caesar_cipher">Codificador</string>
+    <string name="title_activity_rock_paper_scissors">Pedra Papel Tesoura</string>
+    <string name="title_activity_secret_code">Código Secreto</string>
+    <string name="title_activity_word_randomizer">Randomizador</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/optionsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <Button
+        android:id="@+id/cipherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cifra de César"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/rpsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pedra-Papel-Tesoura"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/secretCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código Secreto"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/randomizerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Randomizador de Palavras" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/green_200"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedra, Papel, Tesoura"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/userScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você: 0"
+            android:textSize="18sp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:text="X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="16dp"/>
+
+        <TextView
+            android:id="@+id/computerScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computador: 0"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/computerChoiceImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_rock" /> <!-- ou outra imagem default inicial -->
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha uma opção abaixo"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/rockButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_rock"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:contentDescription="Escolha Pedra"
+            android:layout_margin="8dp"/>
+
+        <ImageButton
+            android:id="@+id/paperButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_paper"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:contentDescription="Escolha Papel"
+            android:layout_margin="8dp"/>
+
+        <ImageButton
+            android:id="@+id/scissorsButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_scissors"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:contentDescription="Escolha Tesoura"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+</LinearLayout>
